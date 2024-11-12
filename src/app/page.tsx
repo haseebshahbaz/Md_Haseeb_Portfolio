@@ -9,6 +9,7 @@ import BackToTop from './components/BackToTop'
 import Testimonials from './components/Testimonials'
 import Blog from './components/Blog'
 import AwardsAndCertifications from './components/Certification'
+import Experience from './components/Experience'
 
 export default function Home() {
   return (
@@ -18,9 +19,10 @@ export default function Home() {
       <AboutMe />
       <Projects />
       <Skills />
-      <Testimonials />
-      <Blog />
       <AwardsAndCertifications />
+      <Experience />
+      <Testimonials />
+      <Blog isHomePage={true} />
       <Contact />
       <Footer />
       <BackToTop />

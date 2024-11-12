@@ -3,22 +3,22 @@ import Image from 'next/image';
 
 const testimonials = [
   {
-    name: 'John Doe',
-    position: 'CEO, Tech Innovators',
-    content: 'Muhammad Haseeb is an exceptional developer. His attention to detail and problem-solving skills are unmatched.',
-    avatar: '/john-doe-avatar.jpg',
+    name: 'Ali Hassan',
+    position: 'Senior Developer, TechVista Solutions',
+    content: 'Muhammad Haseeb showed great potential during his internship. His eagerness to learn and ability to quickly grasp new concepts were impressive.',
+    avatar: '/ali-hassan-avatar.jpg',
   },
   {
-    name: 'Jane Smith',
-    position: 'Project Manager, Digital Solutions',
-    content: 'Working with Haseeb was a pleasure. He consistently delivered high-quality work and met all deadlines.',
-    avatar: '/jane-smith-avatar.jpg',
+    name: 'Fatima Zahra',
+    position: 'Project Lead, Folio3',
+    content: 'I had the pleasure of mentoring Haseeb. His dedication to improving his skills and his positive attitude make him a promising young developer.',
+    avatar: '/fatima-zahra-avatar.jpg',
   },
   {
-    name: 'Alex Johnson',
-    position: 'Lead Developer, StartUp Inc.',
-    content: 'Haseeb expertise in React and Next.js significantly improved our project performance and user experience.',
-    avatar: '/alex-johnson-avatar.jpg',
+    name: 'Usman Khan',
+    position: 'Freelance Web Developer',
+    content: 'Haseeb and I collaborated on a small project. Despite being new to the field, he showed great problem-solving skills and a strong work ethic.',
+    avatar: '/usman-khan-avatar.jpg',
   },
 ];
 
