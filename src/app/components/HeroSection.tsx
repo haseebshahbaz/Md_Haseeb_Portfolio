@@ -7,45 +7,56 @@ import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.h1 
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-primary mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Hi, I'm <span className="text-accent">Muhammad Haseeb</span>
-        </motion.h1>
-        <motion.p 
-          className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Full Stack Developer | UI/UX Enthusiast | Tech Innovator
-        </motion.p>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background to-background">
+      {/* Background Shape */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px]">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <Button asChild size="lg" className="mr-4">
-            <Link href="/#projects">View My Work</Link>
-          </Button>
-          <Button asChild size="lg" variant="outline">
-            <Link href="/#contact">
-              Contact Me
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </motion.div>
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="w-full h-full rounded-full bg-primary/10"
+        />
       </div>
-      <div className="absolute inset-0 z-0">
-        <svg className="absolute left-0 w-full h-full" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#FF0066" d="M47.5,-61.3C59.4,-52.7,66,-36.5,68.9,-20.4C71.8,-4.3,71,11.7,64.9,25.1C58.8,38.5,47.4,49.3,34.4,56.3C21.4,63.3,6.9,66.5,-8.6,66.1C-24.1,65.7,-40.6,61.7,-52.5,51.7C-64.4,41.7,-71.7,25.7,-73.5,9C-75.2,-7.7,-71.4,-24.9,-62.1,-37.5C-52.8,-50,-38,-57.8,-23.7,-64.5C-9.5,-71.1,4.2,-76.5,18.8,-74.8C33.5,-73,49,-69.9,47.5,-61.3Z" transform="translate(100 100)" />
-        </svg>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-3xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-6"
+          >
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold">
+              Hi, I'm{" "}
+              <span className="text-primary">
+                Muhammad Haseeb
+              </span>
+            </h1>
+            <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground">
+              Full Stack Developer | UI/UX Enthusiast | Tech Innovator
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button asChild size="lg" className="text-lg">
+                <Link href="/#projects">
+                  View My Work
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="text-lg">
+                <Link href="/#contact">
+                  Contact Me
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
       </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute left-10 top-1/4 w-4 h-4 rounded-full bg-primary/30" />
+      <div className="absolute right-1/4 bottom-1/4 w-6 h-6 rounded-full bg-secondary/30" />
+      <div className="absolute left-1/3 top-1/3 w-3 h-3 rounded-full bg-accent/30" />
     </section>
   )
 }

@@ -7,22 +7,22 @@ const services = [
   {
     title: 'Web Development',
     description: 'Building responsive and performant web applications using modern technologies.',
-    icon: <Globe className="h-8 w-8 text-primary" />,
+    icon: <Globe className="h-8 w-8 text-accent" />,
   },
   {
     title: 'UI/UX Design',
     description: 'Creating intuitive and visually appealing user interfaces and experiences.',
-    icon: <Palette className="h-8 w-8 text-primary" />,
+    icon: <Palette className="h-8 w-8 text-accent" />,
   },
   {
     title: 'Full Stack Development',
     description: 'End-to-end development from server-side logic to client-side rendering.',
-    icon: <Code className="h-8 w-8 text-primary" />,
+    icon: <Code className="h-8 w-8 text-accent" />,
   },
   {
     title: 'Performance Optimization',
     description: 'Enhancing application speed and efficiency for better user experience.',
-    icon: <Zap className="h-8 w-8 text-primary" />,
+    icon: <Zap className="h-8 w-8 text-accent" />,
   },
 ]
 

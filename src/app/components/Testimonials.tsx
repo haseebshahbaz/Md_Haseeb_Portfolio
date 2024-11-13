@@ -1,24 +1,27 @@
 import React from 'react';
 import Image from 'next/image';
+import AliImg from "../assets/AliHassan.jpeg"
+import Fatima from "../assets/FatimaZahra.jpeg"
+import Usman from "../assets/UsmanKhan.jpg"
 
 const testimonials = [
   {
     name: 'Ali Hassan',
     position: 'Senior Developer, TechVista Solutions',
     content: 'Muhammad Haseeb showed great potential during his internship. His eagerness to learn and ability to quickly grasp new concepts were impressive.',
-    avatar: '/ali-hassan-avatar.jpg',
+    avatar: AliImg,
   },
   {
     name: 'Fatima Zahra',
     position: 'Project Lead, Folio3',
     content: 'I had the pleasure of mentoring Haseeb. His dedication to improving his skills and his positive attitude make him a promising young developer.',
-    avatar: '/fatima-zahra-avatar.jpg',
+    avatar: Fatima,
   },
   {
     name: 'Usman Khan',
     position: 'Freelance Web Developer',
     content: 'Haseeb and I collaborated on a small project. Despite being new to the field, he showed great problem-solving skills and a strong work ethic.',
-    avatar: '/usman-khan-avatar.jpg',
+    avatar: Usman,
   },
 ];
 
